@@ -1,17 +1,16 @@
 <div class="content">
   <div class="container">
-    <mat-card>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <ul>
-          <li>
-            <a href="">Massachusets</a>
-          </li>
-          <li>
-              <a href="">Ohaio</a>
-            </li>
-        </ul>
-      </mat-card-content>
-    </mat-card>
+    <mat-grid-list cols="2" rowHeight="fit" gutterSize="30">
+        <mat-grid-tile rowspan="2">
+          <app-places [places]="places" (changePlace)="setCurrentPlace($event)"></app-places>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <app-weather [place]="currentPlace"></app-weather>
+        </mat-grid-tile>
+        <mat-grid-tile>
+          <app-social [place]="currentPlace"></app-social>
+        </mat-grid-tile>
+    </mat-grid-list>
   </div>
 </div>
+

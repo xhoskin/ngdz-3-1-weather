@@ -1,0 +1,21 @@
+:host {
+  text-align: center;
+  display: flex;
+  justify-content: stretch;
+  align-self: stretch;
+  padding: 30px;
+  width: 100%;
+}
+
+img {
+  border-radius: 50%;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+mat-card {
+  align-self: stretch;
+  flex-grow: 1;
+}

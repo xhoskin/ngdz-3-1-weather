@@ -1,0 +1,20 @@
+:host {
+  display: flex;
+  align-self: stretch;
+  justify-content: stretch;
+  padding: 30px;
+  width: 100%;
+}
+
+.tab-content {
+  padding: 30px;
+}
+
+.place {
+  margin-bottom: 10px;
+}
+
+mat-card {
+  align-self: stretch;
+  flex-grow: 1;
+}

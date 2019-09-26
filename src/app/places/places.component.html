@@ -1,0 +1,18 @@
+<mat-card>
+    <img mat-card-image [src]="currentPlace.img">
+    <mat-card-content>
+      <mat-tab-group>
+        <mat-tab *ngFor="let tab of tabs" [label]="tab.name">
+          <div class="tab-content">
+            <div class="place" *ngFor="let place of tab.places">
+              {{ place.address }}
+              <button
+                mat-raised-button color="primary"
+                (click)="setCurrentPlace(place)"
+              >Select</button>
+            </div>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>

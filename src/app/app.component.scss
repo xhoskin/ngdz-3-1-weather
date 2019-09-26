@@ -1,15 +1,20 @@
-body, html {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.content {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+:host {
+  background: #334;
+  display: block;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1600px;
+  min-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+mat-grid-list {
+  height: 100vh;
+}
+
+.mat-grid-tile .mat-figure {
+  align-items: flex-start;
 }
