@@ -88,6 +88,8 @@ THE SOFTWARE.
 
 @angular/material/grid-list
 
+@angular/material/progress-spinner
+
 @angular/material/tabs
 
 @angular/platform-browser
