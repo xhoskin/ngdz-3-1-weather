@@ -1,6 +1,6 @@
 <div class="content">
   <div class="container">
-    <mat-grid-list cols="2" rowHeight="fit" gutterSize="30">
+    <mat-grid-list cols="2" rowHeight="fit" gutterSize="30" *ngIf="places; else load">
         <mat-grid-tile rowspan="2">
           <app-places [places]="places" (changePlace)="setCurrentPlace($event)"></app-places>
         </mat-grid-tile>
@@ -11,6 +11,8 @@
           <app-social [place]="currentPlace"></app-social>
         </mat-grid-tile>
     </mat-grid-list>
+    <ng-template #load>
+      <mat-spinner></mat-spinner>
+    </ng-template>
   </div>
 </div>
-

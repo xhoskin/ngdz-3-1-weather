@@ -1,3 +1,7 @@
+import { Observable, of } from 'rxjs';
+import { delay } from 'rxjs/operators';
+import { PlaceInterface } from 'src/app/interface/place.interface';
+
 export const PLACES = [
   {
     "img": "https://picsum.photos/seed/dosd/800/300",
@@ -107,4 +111,9 @@ export const PLACES = [
     },
     "type": "Tours"
   }
-]
+];
+
+export const places$: Observable<PlaceInterface[]> = of(PLACES)
+  .pipe(
+    delay(4000)
+  )

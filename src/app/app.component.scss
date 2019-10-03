@@ -1,6 +1,7 @@
 :host {
   background: #334;
   display: block;
+  min-height: 100vh;
 }
 
 .container {
@@ -10,6 +11,13 @@
   margin-right: auto;
 }
 
+mat-spinner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+}
 
 mat-grid-list {
   height: 100vh;
