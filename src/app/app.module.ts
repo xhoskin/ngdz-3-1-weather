@@ -11,13 +11,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { PlacesComponent } from './places/places.component';
 import { WeatherComponent } from './weather/weather.component';
 import { SocialComponent } from './social/social.component';
+import { PhonePipe } from './pipe/phone.pipe';
+import { PlaceTabsPipe } from './pipe/place-tabs.pipe';
+import { FilterPlacesPipe } from './pipe/filter-places.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PlacesComponent,
     WeatherComponent,
-    SocialComponent
+    SocialComponent,
+    PhonePipe,
+    PlaceTabsPipe,
+    FilterPlacesPipe
   ],
   imports: [
     BrowserModule,

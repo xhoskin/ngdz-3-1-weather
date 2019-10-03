@@ -8,7 +8,7 @@ import { PlaceInterface } from '../interface/place.interface';
   templateUrl: './places.component.html',
   styleUrls: ['./places.component.scss']
 })
-export class PlacesComponent implements OnInit {
+export class PlacesComponent {
   @Input() places: PlaceInterface[];
   @Output() changePlace: EventEmitter<PlaceInterface> = new EventEmitter();
 
@@ -20,18 +20,6 @@ export class PlacesComponent implements OnInit {
 
   ngOnInit() {
     this.setCurrentPlace(this.places[0]);
-    this.places.forEach((place) => {
-      if (this.tabs.every(tab => tab.name !== place.type)) {
-        this.tabs.push({
-          name: place.type,
-          places: [place]
-        });
-      } else {
-        const targetTab: PlaceTabInterface = this.tabs
-          .find(tab => tab.name === place.type);
-        targetTab.places.push(place);
-      }
-    });
   }
 
   public setCurrentPlace(place: PlaceInterface) {

@@ -2,7 +2,7 @@ export const PLACES = [
   {
     "img": "https://picsum.photos/seed/dosd/800/300",
     "address": "633 Independence Avenue, Adamstown",
-    "phone": "+1 (923) 463-2630",
+    "phone": "19234632630",
     "weather": {
       "title": "Rainy",
       "icon": "assets/images/rain.svg",
@@ -20,7 +20,7 @@ export const PLACES = [
   {
     "img": "https://picsum.photos/seed/proident/800/300",
     "address": "418 Perry Place, Fowlerville",
-    "phone": "+1 (969) 540-2499",
+    "phone": "19695402499",
     "weather": {
       "title": "Sunny",
       "icon": "assets/images/sun.svg",
@@ -38,7 +38,7 @@ export const PLACES = [
   {
     "img": "https://picsum.photos/seed/sfae/800/300",
     "address": "596 Richardson Street, Naomi",
-    "phone": "+1 (991) 468-2131",
+    "phone": "19914682131",
     "weather": {
       "title": "Cloudy",
       "icon": "assets/images/cloud.svg",
@@ -56,7 +56,7 @@ export const PLACES = [
   {
     "img": "https://picsum.photos/seed/anim/800/300",
     "address": "782 Cozine Avenue, Worcester",
-    "phone": "+1 (957) 497-2509",
+    "phone": "19574972509",
     "weather": {
       "title": "Sunny",
       "icon": "assets/images/sun.svg",
@@ -74,7 +74,7 @@ export const PLACES = [
   {
     "img": "https://picsum.photos/seed/nostrud/800/300",
     "address": "455 Cobek Court, Osage",
-    "phone": "+1 (931) 476-2243",
+    "phone": "19314762243",
     "weather": {
       "title": "Sunny",
       "icon": "assets/images/sun.svg",
@@ -92,7 +92,7 @@ export const PLACES = [
   {
     "img": "https://picsum.photos/seed/magna/800/300",
     "address": "802 Scholes Street, Wadsworth",
-    "phone": "+1 (857) 466-3145",
+    "phone": "18574663145",
     "weather": {
       "title": "Cloudy",
       "icon": "assets/images/cloud.svg",

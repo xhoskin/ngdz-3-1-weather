@@ -2,10 +2,13 @@
     <img mat-card-image [src]="currentPlace.img">
     <mat-card-content>
       <mat-tab-group>
-        <mat-tab *ngFor="let tab of tabs" [label]="tab.name">
+        <mat-tab *ngFor="let tab of places | placeTabs" [label]="tab">
           <div class="tab-content">
-            <div class="place" *ngFor="let place of tab.places">
-              {{ place.address }}
+            <div class="place" *ngFor="let place of places | filterPlaces:tab">
+              <div class="info">
+                  {{ place.address }} <br>
+                  {{ place.phone | phone }}
+              </div>
               <button
                 mat-raised-button color="primary"
                 (click)="setCurrentPlace(place)"
